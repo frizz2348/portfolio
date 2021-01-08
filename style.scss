@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 } 
 
 
-$mainText: rgb(236, 6, 6);
+$mainText: rgb(0, 0, 0);
 $secondaryText: rgb(32, 32, 32);
 $borderColor: rgb(88, 156, 88);
+$mainColor: black;
+$secondaryColor: lightgrey;
 
 h1, h2, h3, h4, h5, h6, strong {
     color: $mainText;
@@ -16,4 +18,54 @@ h1, h2, h3, h4, h5, h6, strong {
 p, label, span, input, textarea {
 
 }
+
+.s1, .s2 {
+    border: 1px solid $borderColor;
+    overflow: auto;
+}
+.s1 {
+    background-color: $secondaryColor;
+}
+
+.s2 { 
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main--container {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main--container {
+        width: 95%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+} 
+
+ul {
+    list-style: none;
+}
+
+h1 {font-size: 56px;};
+h2 {font-size: 36px;};
+h3 {font-size: 28px;};
+h4 {font-size: 24px;};
+h5 {font-size: 20px;};
+h6 {font-size: 16px;};
+
 
