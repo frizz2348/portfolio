@@ -4,7 +4,12 @@
   font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3, h4, h5, h6, strong {
-  color: black; }
+  color: black;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500; }
+
+h1 {
+  text-align: center; }
 
 .s1, .s2 {
   border: 1px solid #589c58;
@@ -15,9 +20,6 @@ h1, h2, h3, h4, h5, h6, strong {
 
 .s2 {
   background-color: white; }
-
-h1 {
-  font-family: 'Russo One', sans-serif; }
 
 p {
   font-family: 'Roboto Mono', monospace; }
