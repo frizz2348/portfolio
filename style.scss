@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Russo One', sans-serif;
 } 
 
 
@@ -18,15 +18,12 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 p, label, span, input, textarea {
-
+    font-family: 'Russo One', sans-serif;
 }
 
-h1 {
-    text-align: center;
-}
 .s1, .s2 {
     border: 1px solid $borderColor;
-    overflow: auto;
+    //overflow: auto;
 }
 .s1 {
     background-color: $secondaryColor;
@@ -42,7 +39,7 @@ p {
 
 .main--container {
     width: 1200px;
-    height: 200px;
+    //height: 200px;
     margin: 0 auto;
 }
 
@@ -69,4 +66,12 @@ h4 {font-size: 24px;};
 h5 {font-size: 20px;};
 h6 {font-size: 16px;};
 
+.greeting--wrapper {
+    display: grid;
+    border: 1px solid red;
+    justify-content: center;
+    min-height: 10em;
+    align-content: center;
+    align-items: center;
+}
 
