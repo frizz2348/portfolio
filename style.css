@@ -11,9 +11,6 @@ h1, h2, h3, h4, h5, h6, strong {
 p, label, span, input, textarea {
   font-family: 'Russo One', sans-serif; }
 
-.s1, .s2 {
-  border: 1px solid #589c58; }
-
 .s1 {
   background-color: lightgrey; }
 
@@ -57,10 +54,51 @@ h6 {
 
 .greeting--wrapper {
   display: grid;
-  border: 1px solid red;
   justify-content: center;
   min-height: 10em;
   align-content: center;
   align-items: center; }
+
+.intro--wrapper {
+  background-color: white;
+  -webkit-box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
+  box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 30em;
+  grid-template-areas: 'nav--wrapper nav--wrapper' 'left--column right--column';
+  border-radius: .5em; }
+
+.nav--wrapper {
+  grid-area: nav--wrapper;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 0 0; }
+
+.left--column {
+  grid-area: left--column; }
+
+.right--column {
+  grid-area: right--column; }
+
+.dots {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0 0 0 10px; }
+  .dots--wrapper {
+    display: flex; }
+
+.red {
+  background-color: red; }
+
+.yellow {
+  background-color: #ffef93; }
+
+.green {
+  background-color: #0cce0c; }
 
 /*# sourceMappingURL=style.css.map */

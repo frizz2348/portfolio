@@ -8,7 +8,7 @@
 $mainText: rgb(0, 0, 0);
 $secondaryText: rgb(32, 32, 32);
 $borderColor: rgb(88, 156, 88);
-$mainColor: black;
+$mainColor: rgb(255, 255, 255);
 $secondaryColor: lightgrey;
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -22,7 +22,7 @@ p, label, span, input, textarea {
 }
 
 .s1, .s2 {
-    border: 1px solid $borderColor;
+    //border: 1px solid $borderColor;
     //overflow: auto;
 }
 .s1 {
@@ -39,7 +39,6 @@ p {
 
 .main--container {
     width: 1200px;
-    //height: 200px;
     margin: 0 auto;
 }
 
@@ -68,10 +67,65 @@ h6 {font-size: 16px;};
 
 .greeting--wrapper {
     display: grid;
-    border: 1px solid red;
+    //border: 1px solid red;
     justify-content: center;
     min-height: 10em;
     align-content: center;
     align-items: center;
 }
 
+.intro--wrapper {
+    background-color: $mainColor;
+    -webkit-box-shadow: 13px -6px 10px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 13px -6px 10px -2px rgba(0,0,0,0.48);
+    box-shadow: 13px -6px 10px -2px rgba(0,0,0,0.48);
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+        'nav--wrapper nav--wrapper'
+        'left--column right--column';
+    border-radius: .5em;
+}
+
+.nav--wrapper {
+    grid-area: nav--wrapper;
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0
+}
+
+.left--column {
+    grid-area: left--column;
+}
+
+.right--column {
+    grid-area: right--column;
+}
+
+.dots{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin:0 0 0 10px;
+    &--wrapper {
+        display: flex;
+    }
+    
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: rgb(255, 239, 147);
+}
+
+.green {
+    background-color: rgb(12, 206, 12);
+}
