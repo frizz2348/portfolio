@@ -82,8 +82,8 @@ h6 {
 .left--column {
   grid-area: left--column; }
   .left--column #profile--pic {
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
     align-self: center; }
 
 .right--column {
