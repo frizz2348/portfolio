@@ -51,7 +51,7 @@ p {
 
 a {
     text-decoration: none;
-    color: lightblue;
+    color: dodgerblue;
 } 
 
 ul {
@@ -87,6 +87,7 @@ h6 {font-size: 16px;};
     grid-template-areas: 
         'nav--wrapper nav--wrapper'
         'left--column right--column';
+    border: 2px double $mainText;
     border-radius: .5em;
 }
 
@@ -101,6 +102,11 @@ h6 {font-size: 16px;};
 
 .left--column {
     grid-area: left--column;
+    #profile--pic {
+        width: 150px;
+        height: 200px;
+        align-self: center;
+    }
 }
 
 .right--column {
@@ -128,4 +134,20 @@ h6 {font-size: 16px;};
 
 .green {
     background-color: rgb(12, 206, 12);
+}
+
+#navigation {
+    margin: 0;
+    padding: 10px;
+    li {
+        display: inline-block;
+        margin: 0 5px;
+        
+    }
+}
+
+.theme--options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -29,7 +29,7 @@ p {
     width: 95%; } }
 a {
   text-decoration: none;
-  color: lightblue; }
+  color: dodgerblue; }
 
 ul {
   list-style: none; }
@@ -68,6 +68,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3em 30em;
   grid-template-areas: 'nav--wrapper nav--wrapper' 'left--column right--column';
+  border: 2px double black;
   border-radius: .5em; }
 
 .nav--wrapper {
@@ -80,6 +81,10 @@ h6 {
 
 .left--column {
   grid-area: left--column; }
+  .left--column #profile--pic {
+    width: 150px;
+    height: 200px;
+    align-self: center; }
 
 .right--column {
   grid-area: right--column; }
@@ -100,5 +105,17 @@ h6 {
 
 .green {
   background-color: #0cce0c; }
+
+#navigation {
+  margin: 0;
+  padding: 10px; }
+  #navigation li {
+    display: inline-block;
+    margin: 0 5px; }
+
+.theme--options {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
