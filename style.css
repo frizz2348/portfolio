@@ -1,121 +1,58 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Russo One', sans-serif; }
+/*
+Error: Invalid CSS after "    margin: ": expected expression (e.g. 1px, bold), was ";"
+        on line 140 of style.scss
 
-h1, h2, h3, h4, h5, h6, strong {
-  color: black;
-  font-family: 'Russo One', sans-serif;
-  font-weight: 500; }
+135: .green {
+136:     background-color: rgb(12, 206, 12);
+137: }
+138: 
+139: #navigation {
+140:     margin: ;
+141:     padding: 10px;
+142:     li {
+143:         display: inline-block;
+144:         margin: 0 5px;
+145:         
 
-p, label, span, input, textarea {
-  font-family: 'Russo One', sans-serif; }
-
-.s1 {
-  background-color: lightgrey; }
-
-.s2 {
-  background-color: white; }
-
-p {
-  font-family: 'Roboto Mono', monospace; }
-
-.main--container {
-  width: 1200px;
-  margin: 0 auto; }
-
-@media screen and (max-width: 1200px) {
-  .main--container {
-    width: 95%; } }
-a {
-  text-decoration: none;
-  color: dodgerblue; }
-
-ul {
-  list-style: none; }
-
-h1 {
-  font-size: 56px; }
-
-h2 {
-  font-size: 36px; }
-
-h3 {
-  font-size: 28px; }
-
-h4 {
-  font-size: 24px; }
-
-h5 {
-  font-size: 20px; }
-
-h6 {
-  font-size: 16px; }
-
-.greeting--wrapper {
-  display: grid;
-  justify-content: center;
-  min-height: 10em;
-  align-content: center;
-  align-items: center; }
-
-.intro--wrapper {
-  background-color: white;
-  -webkit-box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
-  -moz-box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
-  box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3em 30em;
-  grid-template-areas: 'nav--wrapper nav--wrapper' 'left--column right--column';
-  border: 2px double black;
-  border-radius: .5em; }
-
-.nav--wrapper {
-  grid-area: nav--wrapper;
-  background-color: lightgrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px 5px 0 0; }
-
-.left--column {
-  grid-area: left--column; }
-  .left--column #profile--pic {
-    width: 250px;
-    height: 300px;
-    align-self: center; }
-
-.right--column {
-  grid-area: right--column; }
-
-.dots {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  margin: 0 0 0 10px; }
-  .dots--wrapper {
-    display: flex; }
-
-.red {
-  background-color: red; }
-
-.yellow {
-  background-color: #ffef93; }
-
-.green {
-  background-color: #0cce0c; }
-
-#navigation {
-  margin: 0;
-  padding: 10px; }
-  #navigation li {
-    display: inline-block;
-    margin: 0 5px; }
-
-.theme--options {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:140
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:855:in `assert_expr'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1002:in `value!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:807:in `block in try_declaration'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    margin: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 140 of style.scss\A \A 135: .green {\A 136:     background-color: rgb(12, 206, 12);\A 137: }\A 138: \A 139: #navigation {\A 140:     margin: ;\A 141:     padding: 10px;\A 142:     li {\A 143:         display: inline-block;\A 144:         margin: 0 5px;\A 145:         "; }
