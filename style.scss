@@ -103,9 +103,9 @@ h6 {font-size: 16px;};
 .left--column {
     grid-area: left--column;
     #profile--pic {
-        width: 250px;
-        height: 300px;
-        align-self: center;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 }
 
