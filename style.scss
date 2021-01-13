@@ -84,7 +84,7 @@ h6 {font-size: 16px;};
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em;
+    // grid-template-rows: 3em 30em;
     grid-template-areas: 
         'nav--wrapper nav--wrapper'
         'left--column right--column';
@@ -168,7 +168,27 @@ h6 {font-size: 16px;};
     cursor: pointer;
 
     &:hover {
-        padding: 5px;
+        border-width: 5px;
         transition: .2s ease-in-out ;
     }
+}
+
+#light--mode {
+    background-color: white;
+}
+
+#blue--mode {
+    background-color: blue;
+}
+
+#green--mode {
+    background-color: green;
+}
+
+#purple--mode {
+    background-color: purple;
+}
+
+.settings--note {
+
 }
