@@ -79,10 +79,23 @@ h6 {
   border-radius: 5px 5px 0 0; }
 
 .left--column {
-  grid-area: left--column; }
+  grid-area: left--column;
+  padding: 40px 0; }
 
 .right--column {
   grid-area: right--column; }
+
+#preview {
+  width: 300px;
+  border: 1.5px solid cyan;
+  background-color: rgba(248, 231, 231, 0.726);
+  padding: 15px; }
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid cyan; }
 
 .dots {
   height: 15px;
@@ -145,5 +158,11 @@ h6 {
 
 #purple--mode {
   background-color: purple; }
+
+#settings--note {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
