@@ -10,6 +10,7 @@ $secondaryText: rgb(32, 32, 32);
 $borderColor: rgb(88, 156, 88);
 $mainColor: rgb(255, 255, 255);
 $secondaryColor: lightgrey;
+$themeDotColor: rgb(13, 209, 150);
 
 h1, h2, h3, h4, h5, h6, strong {
     color: $mainText;
@@ -102,11 +103,6 @@ h6 {font-size: 16px;};
 
 .left--column {
     grid-area: left--column;
-    #profile--pic {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }
 }
 
 .right--column {
@@ -146,8 +142,33 @@ h6 {font-size: 16px;};
     }
 }
 
+#profile--pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
 .theme--options {
     display: flex;
-   // justify-content: center;
-   // align-items: center;
+    justify-content: center;
+}
+
+.theme--dots {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    -webkit-box-shadow: 13px -6px 10px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 13px -6px 10px -2px rgba(0,0,0,0.48);
+    box-shadow: 13px -6px 10px -2px rgba(0,0,0,0.48);
+    margin: 5px;
+    border: 2px solid $themeDotColor;
+    cursor: pointer;
+
+    &:hover {
+        padding: 5px;
+        transition: .2s ease-in-out ;
+    }
 }

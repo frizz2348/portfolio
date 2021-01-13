@@ -81,10 +81,6 @@ h6 {
 
 .left--column {
   grid-area: left--column; }
-  .left--column #profile--pic {
-    width: 200px;
-    height: 200px;
-    object-fit: cover; }
 
 .right--column {
   grid-area: right--column; }
@@ -113,7 +109,30 @@ h6 {
     display: inline-block;
     margin: 0 5px; }
 
+#profile--pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block; }
+
 .theme--options {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
+
+.theme--dots {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
+  box-shadow: 13px -6px 10px -2px rgba(0, 0, 0, 0.48);
+  margin: 5px;
+  border: 2px solid #0dd196;
+  cursor: pointer; }
+  .theme--dots:hover {
+    padding: 5px;
+    transition: 0.2s ease-in-out; }
 
 /*# sourceMappingURL=style.css.map */
