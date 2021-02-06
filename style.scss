@@ -88,7 +88,7 @@ h6 {font-size: 16px;};
     // grid-template-rows: 3em 30em;
     grid-template-areas: 
         'nav--wrapper nav--wrapper'
-        'left--column right--column';
+        'left--column  right--column';
     border: 2px double $mainText;
     border-radius: .5em;
 }
@@ -109,6 +109,8 @@ h6 {font-size: 16px;};
 
 .right--column {
     grid-area: right--column;
+    display: grid;
+    align-content: center;
 }
 
 #preview {
@@ -116,7 +118,7 @@ h6 {font-size: 16px;};
     border: 1.5px solid cyan;
     background-color: $previewBg;
     padding: 15px;
-    margin: 30px auto;
+    position: relative;
 }
 
 .corner {
@@ -124,6 +126,25 @@ h6 {font-size: 16px;};
     height: 7px;
     border-radius: 50%;
     border: 1.5px solid cyan;
+    background-color: #fff;
+    position: absolute;
+}
+
+#corner--tl {
+    top: -5px;
+    left: -5px;
+}
+#corner--tr {
+    top: -5px;
+    right: -5px;
+}
+#corner--bl {
+    bottom: -5px;
+    left: -5px;
+}
+#corner--br {
+    bottom: -5px;
+    right: -5px;
 }
 
 .dots{
