@@ -89,7 +89,8 @@ h6 {
   width: 300px;
   border: 1.5px solid cyan;
   background-color: rgba(248, 231, 231, 0.726);
-  padding: 15px; }
+  padding: 15px;
+  margin: 30px auto; }
 
 .corner {
   width: 7px;
@@ -122,11 +123,12 @@ h6 {
     margin: 0 5px; }
 
 #profile--pic {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  border-radius: 50%; }
 
 .theme--options {
   display: flex;

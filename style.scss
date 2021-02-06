@@ -116,6 +116,7 @@ h6 {font-size: 16px;};
     border: 1.5px solid cyan;
     background-color: $previewBg;
     padding: 15px;
+    margin: 30px auto;
 }
 
 .corner {
@@ -159,11 +160,12 @@ h6 {font-size: 16px;};
 }
 
 #profile--pic {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     margin: 0 auto;
     display: block;
+    border-radius: 50%;
 }
 
 .theme--options {
@@ -210,6 +212,7 @@ h6 {font-size: 16px;};
     margin-top: 10px;
     font-weight: 600;
     font-style: italic;
-
 }
+
+
 
