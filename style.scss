@@ -12,6 +12,7 @@ $mainColor: rgb(255, 255, 255);
 $secondaryColor: lightgrey;
 $themeDotColor: rgb(13, 209, 150);
 $previewBg: rgba(248, 231, 231, 0.726);
+$preview--shadow: #f0ead6;
 
 h1, h2, h3, h4, h5, h6, strong {
     color: $mainText;
@@ -50,6 +51,7 @@ p {
         width: 95%;
     }
 }
+
 
 a {
     text-decoration: none;
@@ -111,6 +113,14 @@ h6 {font-size: 16px;};
     grid-area: right--column;
     display: grid;
     align-content: center;
+}
+
+#preview--shadow {
+    background-color: $preview--shadow;
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 #preview {
@@ -237,3 +247,19 @@ h6 {font-size: 16px;};
 
 
 
+@media screen and (max-width:760px) {
+    body {
+    }
+    .intro--wrapper {
+        grid-template-areas: 
+            'nav--wrapper nav--wrapper'
+            'left--column left--column'
+            'right--column right--column';
+        border: 4px double $mainText;
+        border-radius: .5em;
+    }
+
+    .right--column {
+        margin: 70px auto;
+    }
+}

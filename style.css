@@ -87,6 +87,13 @@ h6 {
   display: grid;
   align-content: center; }
 
+#preview--shadow {
+  background-color: #f0ead6;
+  width: 300px;
+  height: 180px;
+  padding-left: 30px;
+  padding-top: 30px; }
+
 #preview {
   width: 300px;
   border: 1.5px solid cyan;
@@ -186,5 +193,14 @@ h6 {
   margin-top: 10px;
   font-weight: 600;
   font-style: italic; }
+
+@media screen and (max-width: 760px) {
+  .intro--wrapper {
+    grid-template-areas: 'nav--wrapper nav--wrapper' 'left--column left--column' 'right--column right--column';
+    border: 4px double black;
+    border-radius: .5em; }
+
+  .right--column {
+    margin: 70px auto; } }
 
 /*# sourceMappingURL=style.css.map */
