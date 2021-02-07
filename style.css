@@ -24,9 +24,6 @@ p {
   width: 1200px;
   margin: 0 auto; }
 
-@media screen and (max-width: 1200px) {
-  .main--container {
-    width: 95%; } }
 a {
   text-decoration: none;
   color: dodgerblue; }
@@ -196,11 +193,16 @@ h6 {
 
 @media screen and (max-width: 760px) {
   .intro--wrapper {
-    grid-template-areas: 'nav--wrapper nav--wrapper' 'left--column left--column' 'right--column right--column';
+    grid-template-columns: 1fr;
+    grid-template-areas: 'nav--wrapper' 'left--column' 'right--column';
     border: 4px double black;
     border-radius: .5em; }
 
   .right--column {
-    margin: 70px auto; } }
+    justify-content: center;
+    padding: 60px 0; } }
+@media screen and (max-width: 1200px) {
+  .main--container {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
