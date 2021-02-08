@@ -260,6 +260,10 @@ h6 {font-size: 16px;};
     }
 }
 
+.about--wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
 
 @media screen and (max-width:760px) {

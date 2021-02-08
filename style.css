@@ -205,6 +205,10 @@ h6 {
     font-family: monospace;
     font-size: 20px; }
 
+.about--wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+
 @media screen and (max-width: 760px) {
   .intro--wrapper {
     grid-template-columns: 1fr;
