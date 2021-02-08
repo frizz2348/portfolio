@@ -191,23 +191,34 @@ h6 {
   font-weight: 600;
   font-style: italic; }
 
-.about--wrapper p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-.about--wrapper h1, .about--wrapper h2, .about--wrapper h3, .about--wrapper h4, .about--wrapper h5, .about--wrapper h6 {
-  font-family: Arial, Helvetica, sans-serif; }
-.about--wrapper .skillset {
-  background-color: rgba(212, 182, 126, 0.513);
-  border-radius: .5em;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center; }
-  .about--wrapper .skillset ul li {
-    font-family: monospace;
-    font-size: 20px; }
+.about--wrapper {
+  padding: 50px 0; }
+  .about--wrapper p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  .about--wrapper h1, .about--wrapper h2, .about--wrapper h3, .about--wrapper h4, .about--wrapper h5, .about--wrapper h6 {
+    font-family: Arial, Helvetica, sans-serif; }
+  .about--wrapper .skillset {
+    background-color: #f0ead6;
+    border-radius: .5em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px; }
+    .about--wrapper .skillset ul li {
+      font-family: monospace;
+      font-size: 20px; }
 
 .about--wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 40px; }
+
+.social--links {
+  display: grid;
+  align-content: center;
+  text-align: center; }
+
+#social--img {
+  width: 100%; }
 
 @media screen and (max-width: 760px) {
   .intro--wrapper {
