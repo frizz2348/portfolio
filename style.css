@@ -216,9 +216,28 @@ h6 {
   display: grid;
   align-content: center;
   text-align: center; }
+  .social--links i {
+    font-size: 20px; }
 
 #social--img {
   width: 100%; }
+
+.post {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; }
+  .post--intro {
+    background-color: white;
+    height: 440px; }
+    .post--intro h4, .post--intro a {
+      padding: 30px; }
+    .post--intro p {
+      margin-bottom: 20px;
+      color: grey;
+      padding: 0 20px; }
+    .post--intro img {
+      width: 100%;
+      height: 50%; }
 
 @media screen and (max-width: 760px) {
   .intro--wrapper {
